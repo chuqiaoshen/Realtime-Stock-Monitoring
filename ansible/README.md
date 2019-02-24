@@ -1,4 +1,6 @@
 # Ansible
+[Intro to Ansible](https://www.ansible.com/resources/videos/quick-start-video)
+
 ## Dependency
 ```sh
 ansible-galaxy install AnsibleShipyard.ansible-zookeeper
