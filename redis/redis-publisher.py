@@ -4,6 +4,7 @@ add redis database to reduce the pressure of Kafka'''
 from kafka import KafkaConsumer
 import argparse
 import atexit
+#add logging 
 import logging
 import redis
 
