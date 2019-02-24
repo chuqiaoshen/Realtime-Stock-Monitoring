@@ -3,7 +3,8 @@ import argparse
 import atexit
 import confluent_kafka
 import datetime
-import logging
+#add logging
+import logging 
 import random
 import time
 #log files
@@ -14,14 +15,17 @@ logger.setLevel(logging.INFO)
 
 def generate_and_write_data(p, topic):
     logger.info('Start to generate data and write to kafka')
+
     """
     generate data and write it to kafka
     - :param p:
     - :param topic:
     - :return:
     """
+
     num_of_msg = 0
     start = time.time()
+
     while True:
         num_of_msg += 1
         price = random.randint(30, 120)
