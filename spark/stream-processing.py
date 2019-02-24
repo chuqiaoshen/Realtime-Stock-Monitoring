@@ -1,4 +1,6 @@
 #import libs
+##TODO: change spark to dataframe 
+
 import atexit
 import logging
 import json
@@ -45,7 +47,7 @@ def shutdown_hook(producer):
 def process_stream(stream):
     """
     process stream
-    : send processed data back to kafka 
+    : send processed data back to kafka
     """
     def send_to_kafka(rdd):
         results = rdd.collect()
